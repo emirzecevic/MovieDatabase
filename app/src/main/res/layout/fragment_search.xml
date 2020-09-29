@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/searchFragment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#332e2f"
+    android:orientation="vertical"
+    tools:context=".searchFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="3dp"
+        app:cardBackgroundColor="#1cbbcc"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="4"
+                android:background="#1cbbcc"
+                android:ems="10"
+                android:hint="Enter movie name"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff" />
+
+            <ImageButton
+                android:id="@+id/ibSearch"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="#1cbbcc"
+                android:padding="5dp"
+                android:src="@drawable/ic_baseline_search_24" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/suggestionList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
