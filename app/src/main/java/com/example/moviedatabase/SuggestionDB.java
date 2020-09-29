@@ -15,7 +15,7 @@ public class SuggestionDB {
 
     private final String DATABASE_NAME = "SuggestionDB";
     private final String DATABASE_TABLE = "SuggestionTable";
-    private final int DATABASE_VERSION = 1;
+    private final int DATABASE_VERSION = 2;
 
     private DBHelper myHelper;
     private final Context myContext;
